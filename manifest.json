@@ -1,0 +1,28 @@
+{
+     "name": "Supreme Webscraper",
+     "version": "1.0",
+     "description": "Supreme webscraper for Chrome",
+     "permissions": [
+          "tabs",
+          "notifications",
+          "http://*/",
+          "https://*/",
+          "storage"
+     ],
+     "browser_action": {
+          "default_icon": "icon.png",
+          "default_popup": "popup.html"
+     },
+     "background": {
+          "scripts": ["background.js"]
+     },
+     "commands": {
+          "start": {
+               "suggested_key": {
+                    "default": "Ctrl+Shift+Space"
+               },
+               "description": "activate crawler"
+          }
+     },
+     "manifest_version": 2
+}
